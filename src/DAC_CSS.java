@@ -679,10 +679,10 @@ public class DAC_CSS {
 		CipherTextABE ct_abe=dac_css.ReEnc(rk, ct_ibe, D_1, F_1, D_2, Tc);
 
 		//8：Decrypt the IBE ciphertext
-		System.out.println(dac_css.DecIBE(ct_ibe, sk));
+		System.out.println("IBE decrypt:" + dac_css.DecIBE(ct_ibe, sk));
 
 		//9：Decrypt ABE ciphertext
-		System.out.println(dac_css.DecABE(ct_abe, wak, user_id, A_j, V_j));
+		System.out.println("ABE decrypt:" + dac_css.DecABE(ct_abe, wak, user_id, A_j, V_j));
 	}
 
 

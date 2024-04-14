@@ -12,7 +12,7 @@ import java.util.Map;
 public class get_msp {
     public static void main(String[] args){
 
-        Pairing pairing = PairingFactory.getPairing("params/a_80_256.properties");
+        Pairing pairing = PairingFactory.getPairing("params/a1_3_256.properties");
         String accessPolicyString = "(0 and 1) or (2 and 3 and 4)";
         String[] satisfiedRhos = new String[] {"0", "1"};
         //Using Lewko-Waters LSSS
